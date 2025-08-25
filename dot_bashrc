@@ -119,3 +119,13 @@ fi
 # customisation begins
 # configure starship
 eval "$(starship init bash)"
+
+# configure kind completion
+if command -v kind &> /dev/null; then
+    source <(kind completion bash)
+fi
+
+# configure kubectl completion
+if command -v kubectl &> /dev/null; then
+    source <(kubectl completion bash)
+fi
