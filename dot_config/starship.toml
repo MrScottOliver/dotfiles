@@ -2,6 +2,7 @@ format = """
 [](#9A348E)\
 $os\
 $username\
+$hostname\
 [](bg:#DA627D fg:#9A348E)\
 $directory\
 [](fg:#DA627D bg:#FCA17D)\
@@ -26,7 +27,8 @@ $kubernetes\
 [](fg:#06969A bg:#33658A)\
 $time\
 [ ](fg:#33658A)\
-"""
+$line_break\
+$character"""
 
 # Disable the blank line at the start of the prompt
 # add_newline = false
@@ -39,6 +41,10 @@ style_user = "bg:#9A348E"
 style_root = "bg:#9A348E"
 format = '[$user ]($style)'
 disabled = false
+
+[hostname]
+format = '[$hostname ]($style)'
+style = "bg:#9A348E"
 
 # An alternative to the username module which displays a symbol that
 # represents the current operating system
