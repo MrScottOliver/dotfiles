@@ -129,3 +129,4 @@ fi
 if command -v kubectl &> /dev/null; then
     source <(kubectl completion bash)
 fi
+complete -C /usr/bin/terraform terraform
