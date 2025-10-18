@@ -1,0 +1,1 @@
+alias gls="git log --oneline | fzf --no-sort --preview 'git show --name-only {1}'"
