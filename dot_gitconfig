@@ -2,3 +2,5 @@
 	name = Scott Oliver
 [init]
 	defaultBranch = main
+[core]
+	editor = code --wait
